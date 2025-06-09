@@ -1,0 +1,426 @@
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Projects - Bishal Giri</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="A showcase of projects by Bishal Giri." />
+	<meta name="keywords" content="Machine Learning, Projects, Bishal Giri" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		@keyframes floatBounce {
+			0% {
+				transform: translateX(0);
+			}
+
+			25% {
+				transform: translateX(var(--float-distance));
+			}
+
+			50% {
+				transform: translateX(calc(var(--float-distance) * -1));
+			}
+
+			75% {
+				transform: translateX(calc(var(--float-distance) * 0.5));
+			}
+
+			100% {
+				transform: translateX(0);
+			}
+		}
+
+		.project-float-list {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			justify-content: center;
+			padding: 2rem 1rem 4rem;
+			position: relative;
+		}
+
+		.project-float-list span {
+			padding: 0.5rem 1rem;
+			border-radius: 12px;
+			font-weight: 700;
+			font-size: 0.9rem;
+			color: #fff;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+			animation: floatBounce calc(8s + var(--i) * 0.5s) ease-in-out infinite alternate;
+			--float-distance: calc(100px + (1px * var(--i)));
+			min-width: 150px;
+			text-align: center;
+			z-index: 1;
+			position: relative;
+			background-size: 200% 200%;
+			transition: transform 0.3s ease;
+		}
+
+		.project-float-list span:nth-child(1) {
+			--i: 1;
+			background-image: linear-gradient(135deg, #e6b84e, #f98b5e);
+		}
+
+		.project-float-list span:nth-child(2) {
+			--i: 2;
+			background-image: linear-gradient(135deg, #6dd99d, #6fbde5);
+		}
+
+		.project-float-list span:nth-child(3) {
+			--i: 3;
+			background-image: linear-gradient(135deg, #f8b970, #c169db);
+		}
+
+		.project-float-list span:nth-child(4) {
+			--i: 4;
+			background-image: linear-gradient(135deg, #89b5f2, #add7f0);
+		}
+
+		.project-float-list span:nth-child(5) {
+			--i: 5;
+			background-image: linear-gradient(135deg, #f6d2aa, #f5a077);
+		}
+
+		.project-float-list span:nth-child(6) {
+			--i: 6;
+			background-image: linear-gradient(135deg, #cca6f5, #75aaf2);
+		}
+
+		.project-float-list span:nth-child(7) {
+			--i: 7;
+			background-image: linear-gradient(135deg, #f5c960, #b9f0f2);
+		}
+
+
+		.custom-slider {
+			position: relative;
+			max-width: 700px;
+			margin: 2rem auto;
+			overflow: hidden;
+			border-radius: 12px;
+			box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+		}
+
+		.custom-slides {
+			display: flex;
+			transition: transform 0.5s ease-in-out;
+		}
+
+		.custom-slides img {
+			width: 100%;
+			flex-shrink: 0;
+			border-radius: 12px;
+		}
+
+		.custom-prev,
+		.custom-next {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background: rgba(0, 0, 0, 0.5);
+			color: white;
+			border: none;
+			font-size: 2rem;
+			padding: 0.5rem 1rem;
+			cursor: pointer;
+			border-radius: 4px;
+			z-index: 10;
+		}
+
+		.custom-prev {
+			left: 10px;
+		}
+
+		.custom-next {
+			right: 10px;
+		}
+
+
+		@keyframes slide {
+			0% {
+				transform: translateX(0);
+			}
+
+			25% {
+				transform: translateX(-100%);
+			}
+
+			50% {
+				transform: translateX(-200%);
+			}
+
+			75% {
+				transform: translateX(-100%);
+			}
+
+			100% {
+				transform: translateX(0);
+			}
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Intro -->
+		<section class="intro">
+			<header>
+				<h1>Project Showcase</h1>
+				<p>Explore a selection of my practical and academic projects in machine learning, software engineering,
+					and system design.</p>
+				<ul class="actions">
+					<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+				</ul>
+			</header>
+			<div class="content">
+				<span class="image fill" data-position="center"><img src="images/pic01.jpg"
+						alt="Project Banner" /></span>
+			</div>
+		</section>
+
+		<!-- Available Projects -->
+		<section id="first">
+			<header>
+				<h2>Available Projects</h2>
+			</header>
+			<div class="content">
+				<div class="project-float-list">
+					<span>Grocery Store Management System</span>
+					<span>Health Hub - Disease Prediction</span>
+					<span>Face Recognition System</span>
+					<span>Appointment Booking System</span>
+					<span>Heart Disease Prediction</span>
+					<span>Vehicle Price Prediction</span>
+					<span>Elevator System Simulation</span>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Projects with sample images -->
+		<section>
+			<header>
+				<h2>Grocery Store Management System</h2>
+			</header>
+			<!-- Image Slider -->
+			<div class="content">
+				<p>This regression-based ML project estimates vehicle prices from input features like model, mileage,
+					and engine type. The pipeline includes data cleaning, exploratory analysis, and model tuning. It's
+					wrapped in a user-friendly interface for trying out real car data and getting predictions.</p>
+				<div class="custom-slider">
+					<div class="custom-slides">
+						<img src="images/pic02.jpg" alt="Slide 1">
+						<img src="images/pic03.jpg" alt="Slide 2">
+						<img src="images/pic02.jpg" alt="Slide 3">
+					</div>
+					<button class="custom-prev">&#10094;</button>
+					<button class="custom-next">&#10095;</button>
+				</div>
+
+		</section>
+
+		<section>
+			<header>
+				<h2>Health Hub - Disease Prediction</h2>
+			</header>
+			<div class="content">
+				<p>This regression-based ML project estimates vehicle prices from input features like model, mileage,
+					and engine type. The pipeline includes data cleaning, exploratory analysis, and model tuning. It's
+					wrapped in a user-friendly interface for trying out real car data and getting predictions.</p>
+				<div class="custom-slider">
+					<div class="custom-slides">
+						<img src="images/pic02.jpg" alt="Slide 1">
+						<img src="images/pic03.jpg" alt="Slide 2">
+						<img src="images/pic02.jpg" alt="Slide 3">
+					</div>
+					<button class="custom-prev">&#10094;</button>
+					<button class="custom-next">&#10095;</button>
+				</div>
+		</section>
+
+		<section>
+			<header>
+				<h2>Face Recognition System</h2>
+			</header>
+			<div class="content">
+				<p>This regression-based ML project estimates vehicle prices from input features like model, mileage,
+					and engine type. The pipeline includes data cleaning, exploratory analysis, and model tuning. It's
+					wrapped in a user-friendly interface for trying out real car data and getting predictions.</p>
+				<div class="custom-slider">
+					<div class="custom-slides">
+						<img src="images/pic02.jpg" alt="Slide 1">
+						<img src="images/pic03.jpg" alt="Slide 2">
+						<img src="images/pic02.jpg" alt="Slide 3">
+					</div>
+					<button class="custom-prev">&#10094;</button>
+					<button class="custom-next">&#10095;</button>
+				</div>
+		</section>
+
+		<section>
+			<header>
+				<h2>Appointment Booking System</h2>
+			</header>
+			<div class="content">
+				<p>This Flask-based system enables users to book appointments with professionals in just a few clicks.
+					Featuring calendar integration, available time-slot selection, and user confirmation notifications,
+					it simplifies the process of scheduling. Backend uses SQLite for data management.</p>
+				<div class="custom-slider">
+					<div class="custom-slides">
+						<img src="images/pic02.jpg" alt="Slide 1">
+						<img src="images/pic03.jpg" alt="Slide 2">
+						<img src="images/pic02.jpg" alt="Slide 3">
+					</div>
+					<button class="custom-prev">&#10094;</button>
+					<button class="custom-next">&#10095;</button>
+				</div>
+		</section>
+
+		<section>
+			<header>
+				<h2>Heart Disease Prediction</h2>
+			</header>
+			<div class="content">
+				<p>Using a public dataset from Kaggle, this project applies various classification algorithms like
+					Logistic Regression, Decision Trees, and Random Forests to predict a patient’s heart disease risk.
+					Users can input health metrics and receive a risk assessment on the UI powered by Streamlit.</p>
+				<div class="custom-slider">
+					<div class="custom-slides">
+						<img src="images/pic02.jpg" alt="Slide 1">
+						<img src="images/pic03.jpg" alt="Slide 2">
+						<img src="images/pic02.jpg" alt="Slide 3">
+					</div>
+					<button class="custom-prev">&#10094;</button>
+					<button class="custom-next">&#10095;</button>
+				</div>
+		</section>
+
+		<section>
+			<header>
+				<h2>Vehicle Price Prediction</h2>
+			</header>
+			<div class="content">
+				<p>This regression-based ML project estimates vehicle prices from input features like model, mileage,
+					and engine type. The pipeline includes data cleaning, exploratory analysis, and model tuning. It's
+					wrapped in a user-friendly interface for trying out real car data and getting predictions.</p>
+				<div class="custom-slider">
+					<div class="custom-slides">
+						<img src="images/pic02.jpg" alt="Slide 1">
+						<img src="images/pic03.jpg" alt="Slide 2">
+						<img src="images/pic02.jpg" alt="Slide 3">
+					</div>
+					<button class="custom-prev">&#10094;</button>
+					<button class="custom-next">&#10095;</button>
+				</div>
+		</section>
+
+		<section>
+			<header>
+				<h2>Elevator System Simulation</h2>
+			</header>
+			<div class="content">
+				<p>This Python-based simulation mimics how a real-world elevator processes floor requests, handles
+					direction logic, and queues. The interface also includes basic animation for visual tracking. The
+					system was designed using object-oriented principles to ensure extensibility.</p>
+				<div class="custom-slider">
+					<div class="custom-slides">
+						<img src="images/pic02.jpg" alt="Slide 1">
+						<img src="images/pic03.jpg" alt="Slide 2">
+						<img src="images/pic02.jpg" alt="Slide 3">
+					</div>
+					<button class="custom-prev">&#10094;</button>
+					<button class="custom-next">&#10095;</button>
+				</div>
+		</section>
+
+		<!-- Footer & Contact -->
+		<section>
+			<header>
+				<h2>Get in touch</h2>
+			</header>
+			<div class="content">
+				<p>If you'd like to discuss a project or just say hi, feel free to reach out through any of the channels
+					below.</p>
+				<form>
+					<div class="fields">
+						<div class="field half">
+							<input type="text" name="name" id="name" placeholder="Name" />
+						</div>
+						<div class="field half">
+							<input type="email" name="email" id="email" placeholder="Email" />
+						</div>
+						<div class="field">
+							<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" class="button primary" /></li>
+					</ul>
+				</form>
+			</div>
+			<footer>
+				<ul class="items">
+					<li>
+						<h3>Email</h3>
+						<a href="#">your.email@example.com</a>
+					</li>
+					<li>
+						<h3>LinkedIn</h3>
+						<a href="#">linkedin.com/in/yourprofile</a>
+					</li>
+					<li>
+						<h3>GitHub</h3>
+						<a href="#">github.com/giribishal</a>
+					</li>
+				</ul>
+			</footer>
+		</section>
+
+		<!-- Copyright -->
+		<div class="copyright">&copy; Bishal Giri. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<script>
+		document.querySelectorAll('.custom-slider').forEach(slider => {
+			const slideContainer = slider.querySelector('.custom-slides');
+			const slides = slider.querySelectorAll('img');
+			let index = 0;
+
+			function showSlide(i) {
+				slideContainer.style.transform = `translateX(-${i * 100}%)`;
+			}
+
+			slider.querySelector('.custom-prev').onclick = () => {
+				index = (index - 1 + slides.length) % slides.length;
+				showSlide(index);
+			};
+
+			slider.querySelector('.custom-next').onclick = () => {
+				index = (index + 1) % slides.length;
+				showSlide(index);
+			};
+		});
+	</script>
+
+
+</body>
+
+</html>
